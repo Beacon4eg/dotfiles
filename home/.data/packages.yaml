@@ -37,14 +37,6 @@
   deb: git-delta
   winget: dandavison.delta
 
-- brew-appstore:
-    name: Disk Speed Test
-    id: 425264550
-
-- brew-appstore:
-    name: Divvy
-    id: 413857545
-
 - brew: dos2unix
   deb: dos2unix
   winget: waterlan.dos2unix
@@ -197,10 +189,7 @@
 
 - winget: WinMerge.WinMerge
 
-- brew-appstore:
-    name: WireGuard
-    id: 1451685025
-  winget: WireGuard.WireGuard
+- winget: WireGuard.WireGuard
 
 - winget: AntibodySoftware.WizTree
 
