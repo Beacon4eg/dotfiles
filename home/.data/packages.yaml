@@ -8,9 +8,6 @@
   deb: 7zip
   winget: 7zip.7zip
 
-- brew: autoconf
-  deb: autoconf
-
 - brew-cask: bartender
 
 - brew: bat
@@ -52,28 +49,13 @@
   deb: dos2unix
   winget: waterlan.dos2unix
 
-- brew-cask: dropbox
-  winget: Dropbox.Dropbox
-
-- brew: mistertea/et/et
-  deb: et
-
 - brew: eza
   deb: eza
   winget: eza-community.eza
 
-- brew: fastfetch
-  deb: fastfetch
-  dnf: fastfetch
-  winget: Fastfetch-cli.Fastfetch
-
 - brew: fd
   deb: fd-find
   winget: sharkdp.fd
-
-- brew: ffmpeg
-
-- brew: ffmpegthumbnailer
 
 - brew: fzf
   deb: fzf
@@ -82,10 +64,6 @@
 - brew: git
   deb: git
   winget: Git.Git
-
-- brew: gnupg
-  deb: gnupg
-  winget: GnuPG.GnuPG
 
 - brew: go
   deb: golang
@@ -123,10 +101,6 @@
 - brew: jq
   winget: jqlang.jq
 
-- brew-cask: logi-options+
-
-- brew-cask: notion
-
 - brew: make
   winget: GnuWin32.Make
 
@@ -142,9 +116,6 @@
 
 - deb: ncat
 
-- brew: ninja
-  winget: Ninja-build.Ninja
-
 - brew: node
   winget: OpenJS.NodeJS
 
@@ -154,8 +125,6 @@
   winget: noborus.ov
 
 - deb: pinentry-tty
-
-- brew: poppler
 
 - scoop: posh-git
 
@@ -207,10 +176,6 @@
   deb: telnet
   dnf: telnet
 
-- brew-appstore:
-    name: Things
-    id: 904280696
-
 - deb: tmux
   dnf: tmux
 
@@ -228,9 +193,6 @@
 - brew-cask: vlc
   winget: VideoLAN.VLC
 
-- brew-cask: wezterm
-  winget: wez.wezterm
-
 - brew: wget
   deb: wget
   winget: GNU.Wget2
@@ -245,8 +207,6 @@
   winget: WireGuard.WireGuard
 
 - winget: AntibodySoftware.WizTree
-
-- brew: yazi
 
 - brew-cask: zoom
   winget: Zoom.Zoom

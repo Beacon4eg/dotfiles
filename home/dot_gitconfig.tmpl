@@ -1,7 +1,6 @@
 [user]
     name = {{ .full_name }}
     email = {{ .git_email }}
-    signingkey = {{ .git_signingkey }}
 [push]
     default = simple
     autoSetupRemote = true
@@ -43,17 +42,6 @@
     ui = auto
 [pull]
     rebase = true
-[gpg]
-    format = ssh
-[gpg "ssh"]
-    allowedSignersFile = ~/.ssh/allowed_signers
-{{- if eq .osid "windows" }}
-    program = C:/Windows/System32/OpenSSH/ssh-keygen.exe
-{{- end }}
-[commit]
-    gpgsign = {{ ne (get .chezmoi.osRelease "id") "centos" }}
-[tag]
-    forceSignAnnotated = {{ ne (get .chezmoi.osRelease "id") "centos" }}
 [init]
     defaultBranch = main
 [core]
@@ -93,6 +81,3 @@
     map-styles = "bold purple => syntax #33194d, bold cyan => syntax #4d2673"
 [delta "interactive"]
     keep-plus-minus-markers = false
-{{- if eq .osid "linux-centos" }}
-{{ includeTemplate (joinPath .chezmoi.homeDir ".config/git/centos.gitconfig") . }}
-{{ end }}

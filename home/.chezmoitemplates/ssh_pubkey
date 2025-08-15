@@ -1,7 +1,0 @@
-{{- $name := .name -}}
-{{- $list := output "ssh-add" "-L" | trim | splitList "\n" -}}
-{{- range $list -}}
-{{- if hasSuffix $name . -}}
-{{ . }}
-{{- end -}}
-{{- end -}}

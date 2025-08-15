@@ -31,21 +31,6 @@
     refreshPeriod = {{ $default_refresh }}
 {{ end }}
 
-{{ if eq .osid "linux-centos" }}
-[".local/bin/hexyl"]
-    type = "archive-file"
-    url = "{{ gitHubLatestReleaseAssetURL "sharkdp/hexyl" "*x86_64-unknown-linux-musl*" }}"
-    stripComponents = 1
-    path = "hexyl"
-    executable = true
-
-[".local/bin/ov"]
-    type = "archive-file"
-    url = "{{ gitHubLatestReleaseAssetURL "noborus/ov" "*linux_amd64*" }}"
-    path = "ov"
-    executable = true
-{{ end }}
-
 {{ if eq .osid "windows" }}
 ["Documents/PowerShell/Completion/bat.ps1"]
     type = "archive-file"
@@ -58,11 +43,4 @@
     url = "{{ gitHubLatestReleaseAssetURL "sharkdp/hyperfine" "*x86_64-pc-windows-msvc*" }}"
     stripComponents = 1
     path = "autocomplete/_hyperfine.ps1"
-{{ end }}
-
-{{ if and .work_machine (ne .osid "windows") }}
-[".config/zsh/custom_completion/_hg"]
-    type = "file"
-    url = "https://raw.githubusercontent.com/facebook/sapling/refs/heads/main/eden/scm/contrib/zsh_completion"
-    refreshPeriod = {{ $default_refresh }}
 {{ end }}
