@@ -13,6 +13,12 @@ My collection of dotfiles for MacOS, Linux and Windows. Feel free to use if you 
 sh -c "$(curl -fsLS get.chezmoi.io)" -- -b ~/.local/bin init --apply Beacon4eg
 ```
 
+### Windows
+Run in `powershell.exe` (not pwsh):
+```
+iex "&{$(irm 'https://get.chezmoi.io/ps1')} -b ~/.local/bin -- init --apply KapJI"
+```
+
 ## Update configuration on current host
 ```
 chezmoi update
